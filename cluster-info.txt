@@ -1,0 +1,35 @@
+CloudForge Cluster Information
+==============================
+
+Cluster Name: microservices-prod-cluster
+Region: us-east-1
+AWS Account: 867828046963
+
+Connection Command:
+  aws eks update-kubeconfig --region us-east-1 --name microservices-prod-cluster
+
+Kubectl Context:
+  cloudforge
+
+Nodes:
+NAME                          STATUS   ROLES    AGE   VERSION
+ip-10-0-10-92.ec2.internal    Ready    <none>   19h   v1.28.15-eks-c39b1d0
+ip-10-0-11-98.ec2.internal    Ready    <none>   19h   v1.28.15-eks-c39b1d0
+ip-10-0-12-166.ec2.internal   Ready    <none>   19h   v1.28.15-eks-c39b1d0
+
+System Components:
+- AWS Load Balancer Controller: Installed
+- Metrics Server: Installed
+
+Namespaces:
+- microservices
+- monitoring  
+- argocd
+
+Next Steps:
+1. Build and push Docker images
+2. Deploy microservices
+3. Configure monitoring
+4. Set up ArgoCD
+
+Generated: Tue Dec  9 00:04:52 EET 2025
