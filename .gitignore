@@ -85,6 +85,8 @@ venv/
 logs/
 debug.log
 iam_policy.json
+*.txt
+
 
 ################################################################################
 # EDITOR / IDE FILES
